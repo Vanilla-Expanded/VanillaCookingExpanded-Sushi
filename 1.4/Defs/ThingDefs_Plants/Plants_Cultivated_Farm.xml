@@ -69,7 +69,8 @@
 			<harvestYield>1</harvestYield>
 			<harvestWork>200</harvestWork>
 			<sowTags>
-				<li>Ground</li>			
+				<li>Ground</li>	
+				<li>Hydroponic</li>				
 			</sowTags>
 			<sowMinSkill>12</sowMinSkill>
 			<topWindExposure>0.1</topWindExposure>
