@@ -149,6 +149,7 @@
 		<defName>VCE_Gunkanmaki</defName>
 		<label>gunkanmaki (gourmet)</label>
 		<description>A culinary work of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity sushi. Gunkanmaki is a special type of nigirizushi: an oval, hand-formed clump of sushi rice that has a strip of nori wrapped around its perimeter to form a vessel that is filled with some soft, loose or fine-chopped ingredient that requires the confinement of nori such as roe.</description>
+		<thingClass>VanillaCookingExpanded.GourmetMeal</thingClass>
 		<graphicData>
 			<texPath>Things/Meals/VCE_Gunkanmaki</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -166,18 +167,14 @@
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
 		</ingestible>
-		<comps>
-			
-			<li Class="VanillaCookingExpanded.CompProperties_StackByCondiments">
-				<condimentTagToCheck>Condiments</condimentTagToCheck>
-			</li>
-		</comps>
+		
 	</ThingDef>
 	
 	<ThingDef ParentName="MealCooked">
 		<defName>VCE_Oshizushi</defName>
 		<label>oshizushi (gourmet)</label>
 		<description>A culinary work of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity sushi. In oshizushi, a block-shaped piece is formed using a wooden mold. The chef lines the bottom of the mold with the toppings, covers them with sushi rice, and then presses the lid of the mold down to create a compact, rectilinear block. The block is removed from the mold and then cut into bite-sized pieces.</description>
+		<thingClass>VanillaCookingExpanded.GourmetMeal</thingClass>
 		<graphicData>
 			<texPath>Things/Meals/VCE_Oshizushi</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -195,12 +192,7 @@
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
 		</ingestible>
-		<comps>
-			
-			<li Class="VanillaCookingExpanded.CompProperties_StackByCondiments">
-				<condimentTagToCheck>Condiments</condimentTagToCheck>
-			</li>
-		</comps>
+		
 	</ThingDef>
 	
 	
