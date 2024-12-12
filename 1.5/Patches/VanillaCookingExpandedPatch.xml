@@ -15,30 +15,7 @@
 
 
 
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/HediffDef[defName = "VCE_WellFedFine"]/comps/li/removeThoughtDefs</xpath>
-					<value>
-
-						<li>VCE_AteFineSushi</li>
-
-					</value>
-				</li>
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/HediffDef[defName = "VCE_WellFedLavish"]/comps/li/removeThoughtDefs</xpath>
-					<value>
-
-						<li>VCE_AteLavishSushi</li>
-
-					</value>
-				</li>
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/HediffDef[defName = "VCE_WellFedGourmet"]/comps/li/removeThoughtDefs</xpath>
-					<value>
-
-						<li>VCE_AteGourmetSushi</li>
-
-					</value>
-				</li>
+			
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[defName = "VCE_DeepFryMeats"]/defaultIngredientFilter/disallowedThingDefs</xpath>
 					<value>

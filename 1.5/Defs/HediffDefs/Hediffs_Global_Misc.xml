@@ -115,9 +115,7 @@
 				<thoughtDefs>					
 					<li>VCE_AteFineSushi</li>						
 				</thoughtDefs>
-				<removeThoughtDefs>					
-					<li>AteFineMeal</li>						
-				</removeThoughtDefs>
+				
 			</li>
 		</comps>
 		<stages>
@@ -143,9 +141,7 @@
 				<thoughtDefs>					
 					<li>VCE_AteLavishSushi</li>						
 				</thoughtDefs>
-				<removeThoughtDefs>					
-					<li>AteLavishMeal</li>						
-				</removeThoughtDefs>
+				
 			</li>
 		</comps>
 		<stages>
@@ -171,11 +167,7 @@
 				<thoughtDefs>					
 					<li>VCE_AteGourmetSushi</li>						
 				</thoughtDefs>
-				<removeThoughtDefs>		
-					<li>AteLavishMeal</li>	
-					<li>VCE_AteLavishSushi</li>	
-					<li>VCE_AteGourmetMeal</li>						
-				</removeThoughtDefs>
+				
 			</li>
 		</comps>
 		<stages>
