@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-	<!-- Stews -->
+	<!-- Sauce fermenter -->
 	
 	
 	<VCE_InsertSoybeansDesc>Fermenting Item</VCE_InsertSoybeansDesc>
@@ -14,6 +14,8 @@
 	
 	<VCE_RemoveSoySauce>Remove Soy Sauce ({0})</VCE_RemoveSoySauce>
 	<VCE_RemoveSoySauceDesc>Remove soy sauce from the fermenter. The sauce will be ready at the present quality level ({0})</VCE_RemoveSoySauceDesc>
+	
+	<VCE_SoyFermenterNotWorking>This soy sauce fermenter is not working at the moment</VCE_SoyFermenterNotWorking>
 	
 	<!-- Condiment stats (using code from AnimalBehaviours) -->
 	

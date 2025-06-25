@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Cooking Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				
+
+
+
+			
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VCE_DeepFryMeats"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+					<value>
+
+						<li>VCE_DeepFriedSushi</li>
+
+					</value>
+				</li>
+				
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+
