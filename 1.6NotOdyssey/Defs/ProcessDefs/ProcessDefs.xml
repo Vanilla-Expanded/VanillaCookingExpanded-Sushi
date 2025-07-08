@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PipeSystem.ProcessDef>
+		<defName>VCE_SoybeansToSauce</defName>
+		<label>Ferment soybeans into soy sauce</label>
+		<description>Turn 30 soybeans into 15 soy sauce.</description>
+		<spawnOnInteractionCell>true</spawnOnInteractionCell>
+		<autoExtract>false</autoExtract>
+	
+		<priorityInBillList>0</priorityInBillList>
+		<ingredients>
+			<li>
+				<thing>VCE_RawSoybean</thing>
+				<countNeeded>30</countNeeded>
+			</li>
+		</ingredients>
+		<ticks>600000</ticks>
+		<results>
+			<li>
+				<thing>VCE_SoySauce</thing>
+				<count>15</count>
+			</li>
+		</results>
+		
+		<destroyIngredientsOnStart>true</destroyIngredientsOnStart>
+	</PipeSystem.ProcessDef>
+	
+</Defs>

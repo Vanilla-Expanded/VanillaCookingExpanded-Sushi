@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs> 
-
-	
-
+<Defs>
 	<ThingDef ParentName="BuildingBase">
 		<defName>VCE_SushiPrepTable</defName>
 		<label>sushi prep table</label>
@@ -40,10 +37,10 @@
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 		</inspectorTabs>
-	    	<building>
-	      		<isMealSource>true</isMealSource>
-	      		<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-	    	</building>
+		<building>
+			<isMealSource>true</isMealSource>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
 		<size>(3,1)</size>
 		<designationCategory>Production</designationCategory>
 		<passability>PassThroughOnly</passability>
@@ -51,11 +48,7 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
-		<!--<researchPrerequisites>
-			<li>VCE_CondimentsResearch</li>
-		</researchPrerequisites>-->
 		<comps>
-
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>ToolCabinet</li>
@@ -72,12 +65,14 @@
 		</placeWorkers>
 		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
-	
 	<ThingDef ParentName="BuildingBase">
 		<defName>VCE_SoyFermenter</defName>
 		<label>soy sauce fermenter</label>
 		<description>A soy fermenter is a cilindrical, metallic drum where soybeans are pressed, mixed with aspergillus bacteria and grain, and aged for long time periods. The result is soy sauce of increasing quality, which can be used as a food condiment.</description>
-		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<inspectorTabs>
+			<li>PipeSystem.ITab_Processor</li>
+		</inspectorTabs>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<drawSize>(2,2)</drawSize>
 			<texPath>Things/Buildings/VCE_SoyFermenter</texPath>
@@ -125,43 +120,14 @@
 			<li>VCE_SoyFermentation</li>
 		</researchPrerequisites>
 		<comps>
-			<li Class="ItemProcessor.CompProperties_ItemProcessor">
-				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
-				<buildingOnGraphic>Things/Buildings/VCE_SoyFermenter</buildingOnGraphic>
-				<numberOfInputs>1</numberOfInputs>
-				<qualitySelector>true</qualitySelector>
-				<acceptsNoneAsInput>false</acceptsNoneAsInput>
-				<InsertFirstItemDesc>VCE_InsertSoybeansDesc</InsertFirstItemDesc>
-
-				<chooseIngredientsIcon>Things/Items/Raw/VCE_RawSoybean</chooseIngredientsIcon>
-
-				<bringIngredientsText>VCE_StartSoybeanInsertion</bringIngredientsText>
-				<bringIngredientsDesc>VCE_StartSoybeanInsertionDesc</bringIngredientsDesc>
-				<bringIngredientsIcon>UI/VCE_InsertSoybeans</bringIngredientsIcon>
-				<resetSemiautomaticIcon>UI/VCE_SoybeansReset</resetSemiautomaticIcon>
-
-
-				<cancelIngredientsText>VCE_CancelBringingSoybeans</cancelIngredientsText> 
-				<cancelIngredientsDesc>VCE_CancelBringingSoybeansDesc</cancelIngredientsDesc>
-				<cancelIngredientsIcon>UI/VCE_CancelSoybeans</cancelIngredientsIcon> 
-
-				<noPowerDestroysProgress>false</noPowerDestroysProgress>
-
-				<removeProductText>VCE_RemoveSoySauce</removeProductText>
-				<removeProductDesc>VCE_RemoveSoySauceDesc</removeProductDesc>
-				<removeProductIcon>UI/VCE_RemoveSoySauce</removeProductIcon>
-
-				<destroyIngredientsAtStartOfProcess>false</destroyIngredientsAtStartOfProcess>
-				<destroyIngredientsAtAwfulQuality>true</destroyIngredientsAtAwfulQuality>
-
+			<li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
+				<notWorkingKey>VCE_SoyFermenterNotWorking</notWorkingKey>
+				<processes>
+					<li>VCE_SoybeansToSauce</li>
+				</processes>
+				<progressBarOffset>(0,0,-0.75)</progressBarOffset>
+				<hideSettings>true</hideSettings>
 			</li>
 		</comps>
 	</ThingDef>
-
-	
-
-
-
-
-
 </Defs>

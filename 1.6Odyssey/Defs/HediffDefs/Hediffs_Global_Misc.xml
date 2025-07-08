@@ -14,7 +14,7 @@
 		<initialSeverity>1.0</initialSeverity>
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
-			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+			<li Class="VEF.Cooking.HediffCompProperties_WhileHavingThoughts">
 				<thoughtDefs>
 					<li>VCE_ConsumedSoySauce</li>
 				</thoughtDefs>
@@ -48,7 +48,7 @@
 		<initialSeverity>1.0</initialSeverity>
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
-			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+			<li Class="VEF.Cooking.HediffCompProperties_WhileHavingThoughts">
 				<thoughtDefs>
 					<li>VCE_ConsumedWasabi</li>
 				</thoughtDefs>
@@ -87,7 +87,7 @@
 		<initialSeverity>1.0</initialSeverity>
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
-			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+			<li Class="VEF.Cooking.HediffCompProperties_WhileHavingThoughts">
 				<thoughtDefs>
 					<li>VCE_AteSimpleSushi</li>							
 				</thoughtDefs>
@@ -111,7 +111,7 @@
 		<initialSeverity>1.0</initialSeverity>
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
-			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+			<li Class="VEF.Cooking.HediffCompProperties_WhileHavingThoughts">
 				<thoughtDefs>					
 					<li>VCE_AteFineSushi</li>						
 				</thoughtDefs>
@@ -137,7 +137,7 @@
 		<initialSeverity>1.0</initialSeverity>
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
-			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+			<li Class="VEF.Cooking.HediffCompProperties_WhileHavingThoughts">
 				<thoughtDefs>					
 					<li>VCE_AteLavishSushi</li>						
 				</thoughtDefs>
@@ -163,7 +163,7 @@
 		<initialSeverity>1.0</initialSeverity>
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
-			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+			<li Class="VEF.Cooking.HediffCompProperties_WhileHavingThoughts">
 				<thoughtDefs>					
 					<li>VCE_AteGourmetSushi</li>						
 				</thoughtDefs>
