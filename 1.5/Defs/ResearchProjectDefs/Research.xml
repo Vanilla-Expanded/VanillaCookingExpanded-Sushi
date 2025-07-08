@@ -12,6 +12,14 @@
 		<baseCost>500</baseCost>
 		<researchViewX>2</researchViewX>
 		<researchViewY>1</researchViewY>
+		<generalRules>
+  <rulesStrings>
+    <li>subject->unlocking soy's secrets</li>
+    <li>subject_story->embraced ancient methods to ferment soybeans, unveiling flavors and nutrients hidden within</li>
+    <li>subject_story->innovated with the soy sauce fermenter, a tool to harness the transformative power of microorganisms</li>
+    <li>subject_gerund->fostering culinary innovation through the alchemy of soy fermentation</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 	
 
