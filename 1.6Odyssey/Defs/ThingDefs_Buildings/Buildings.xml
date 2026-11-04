@@ -68,13 +68,13 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>VCE_SoyFermenter</defName>
 		<label>soy sauce fermenter</label>
-		<description>A soy fermenter is a cilindrical, metallic drum where soybeans are pressed, mixed with aspergillus bacteria and grain, and aged for long time periods. The result is soy sauce of increasing quality, which can be used as a food condiment.</description>
+		<description>A soy fermenter is a cilindrical, metallic drum where soybeans are pressed, mixed with aspergillus bacteria and grain, and aged for long time periods. The result is soy sauce, which can be used as a food condiment.</description>
 		<inspectorTabs>
 			<li>PipeSystem.ITab_Processor</li>
 		</inspectorTabs>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(3,3)</drawSize>
 			<texPath>Things/Buildings/VCE_SoyFermenter</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<damageData>

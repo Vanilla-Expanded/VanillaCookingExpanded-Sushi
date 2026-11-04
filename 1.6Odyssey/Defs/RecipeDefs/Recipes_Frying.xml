@@ -1,12 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
-
-
-
-
 	<RecipeDef>
 		<defName>VCE_DeepFrySushi</defName>
 		<label>deep fry sushi x20</label>
@@ -17,19 +10,16 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<recipeUsers>
-			<li>VCE_DeepFrier</li>					
-		</recipeUsers>	
+			<li>VCE_DeepFrier</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>VCE_Norimaki</li>
-						<li>VCE_Uramaki</li>
-						<li>VCE_Nigiri</li>
-						<li>VCE_Temaki</li>
-						<li>VCE_Futomaki</li>
-						<li>VCE_Gunkanmaki</li>
-						<li>VCE_Oshizushi</li>				
+						<li>VCE_Sushi_Simple</li>
+						<li>VCE_Sushi_Fine</li>
+						<li>VCE_Sushi_Lavish</li>
+						<li>VCE_Sushi_Gourmet</li>
 					</thingDefs>
 				</filter>
 				<count>20</count>
@@ -37,39 +27,22 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>VCE_Norimaki</li>
-				<li>VCE_Uramaki</li>
-				<li>VCE_Nigiri</li>
-				<li>VCE_Temaki</li>
-				<li>VCE_Futomaki</li>
-				<li>VCE_Gunkanmaki</li>
-				<li>VCE_Oshizushi</li>							
-			</thingDefs>			
+				<li>VCE_Sushi_Simple</li>
+				<li>VCE_Sushi_Fine</li>
+				<li>VCE_Sushi_Lavish</li>
+				<li>VCE_Sushi_Gourmet</li>
+			</thingDefs>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<thingDefs>
-				<li>VCE_Norimaki</li>
-				<li>VCE_Uramaki</li>
-				<li>VCE_Nigiri</li>
-				<li>VCE_Temaki</li>
-				<li>VCE_Futomaki</li>
-				<li>VCE_Gunkanmaki</li>
-				<li>VCE_Oshizushi</li>							
+				<li>VCE_Sushi_Simple</li>
+				<li>VCE_Sushi_Fine</li>
+				<li>VCE_Sushi_Lavish</li>
+				<li>VCE_Sushi_Gourmet</li>
 			</thingDefs>
-
 		</defaultIngredientFilter>
 		<products>
 			<VCE_DeepFriedSushi>20</VCE_DeepFriedSushi>
 		</products>
-
 	</RecipeDef>
-
-
-
-
-
-
-
-
-
 </Defs>

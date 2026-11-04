@@ -1,7 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
 	<RecipeDef Name="VCE_CookSushiMealBase" Abstract="True">
 		<fixedIngredientFilter>
 			<categories>
@@ -10,7 +8,6 @@
 			<thingDefs>
 				<li>RawRice</li>
 			</thingDefs>
-			
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -19,12 +16,31 @@
 			<thingDefs>
 				<li>RawRice</li>
 			</thingDefs>
-			
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 	</RecipeDef>
-	
 	<RecipeDef Name="VCE_CookFineSushiMealBase" Abstract="True">
+		<fixedIngredientFilter>
+			<categories>
+				<li>VCEF_RawFishCategory</li>
+			</categories>
+			<thingDefs>
+				<li>RawRice</li>
+				<li>VCE_RawNoriSeaweed</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>VCEF_RawFishCategory</li>
+			</categories>
+			<thingDefs>
+				<li>RawRice</li>
+				<li>VCE_RawNoriSeaweed</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+	<RecipeDef Name="VCE_CookLavishSushiMealBase" Abstract="True">
 		<fixedIngredientFilter>
 			<categories>
 				<li>VCEF_RawFishCategory</li>
@@ -32,8 +48,8 @@
 			</categories>
 			<thingDefs>
 				<li>RawRice</li>
+				<li>VCE_RawNoriSeaweed</li>
 			</thingDefs>
-			
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -42,12 +58,11 @@
 			</categories>
 			<thingDefs>
 				<li>RawRice</li>
+				<li>VCE_RawNoriSeaweed</li>
 			</thingDefs>
-			
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 	</RecipeDef>
-
 	<RecipeDef Name="VCE_CookGourmetSushiMealBase" Abstract="True">
 		<fixedIngredientFilter>
 			<categories>
@@ -57,8 +72,8 @@
 			</categories>
 			<thingDefs>
 				<li>RawRice</li>
+				<li>VCE_RawNoriSeaweed</li>
 			</thingDefs>
-			
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -68,27 +83,24 @@
 			</categories>
 			<thingDefs>
 				<li>RawRice</li>
+				<li>VCE_RawNoriSeaweed</li>
 			</thingDefs>
-			
 		</defaultIngredientFilter>
 		<workSkill>Cooking</workSkill>
 	</RecipeDef>
-	
-	
 	<!-- Simple -->
-
 	<RecipeDef ParentName="VCE_CookSushiMealBase">
-		<defName>VCE_CookChirashizushiSimple</defName>
-		<label>make chirashizushi bowl (simple)</label>
-		<description>Make a Chirashizushi bowl quickly prepared from a few ingredients.</description>
-		<jobString>Making chirashizushi bowl (simple).</jobString>
+		<defName>VCE_CookSushi_Simple</defName>
+		<label>make simple sushi</label>
+		<description>Make simple sushi quickly prepared from a few ingredients.</description>
+		<jobString>Making simple sushi.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<recipeUsers>
-			<li>VCE_SushiPrepTable</li>	
+			<li>VCE_SushiPrepTable</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -109,23 +121,22 @@
 			</li>
 		</ingredients>
 		<products>
-			<VCE_Chirashizushi>1</VCE_Chirashizushi>
-		</products>		
+			<VCE_Sushi_Simple>1</VCE_Sushi_Simple>
+		</products>
 	</RecipeDef>
-	
 	<RecipeDef ParentName="VCE_CookSushiMealBase">
-		<defName>VCE_CookChirashizushiSimpleBulk</defName>
-		<label>make chirashizushi bowls (simple) x4</label>
-		<description>Make 4 Chirashizushi bowls quickly prepared from a few ingredients.</description>
-		<jobString>Making chirashizushi bowls (simple) x4.</jobString>
+		<defName>VCE_CookSushi_Simple_Bulk</defName>
+		<label>make simple sushi x4</label>
+		<description>Make 4 simple sushi quickly prepared from a few ingredients.</description>
+		<jobString>Making simple sushi x4.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
-		 <workAmount>1200</workAmount>
+		<workAmount>1200</workAmount>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<recipeUsers>
-			<li>VCE_SushiPrepTable</li>	
+			<li>VCE_SushiPrepTable</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -146,112 +157,37 @@
 			</li>
 		</ingredients>
 		<products>
-			<VCE_Chirashizushi>4</VCE_Chirashizushi>
-		</products>		
+			<VCE_Sushi_Simple>4</VCE_Sushi_Simple>
+		</products>
 	</RecipeDef>
-	
-	<RecipeDef ParentName="VCE_CookSushiMealBase">
-		<defName>VCE_CookNorimakiSimple</defName>
-		<label>make norimaki (simple)</label>
-		<description>Make norimaki quickly prepared from a few ingredients.</description>
-		<jobString>Making norimaki (simple).</jobString>
-		<workSpeedStat>CookSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_CookMeal</soundWorking>
-		<allowMixingIngredients>true</allowMixingIngredients>
-		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-		<recipeUsers>
-			<li>VCE_SushiPrepTable</li>	
-		</recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>VCEF_RawFishCategory</li>
-					</categories>
-				</filter>
-				<count>0.35</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>RawRice</li>
-					</thingDefs>
-				</filter>
-				<count>0.15</count>
-			</li>
-		</ingredients>
-		<products>
-			<VCE_Norimaki>1</VCE_Norimaki>
-		</products>		
-	</RecipeDef>
-	
-	<RecipeDef ParentName="VCE_CookSushiMealBase">
-		<defName>VCE_CookNorimakiSimpleBulk</defName>
-		<label>make norimaki (simple) x4</label>
-		<description>Make 4 norimaki quickly prepared from a few ingredients.</description>
-		<jobString>Making norimaki (simple) x4.</jobString>
-		 <workAmount>1200</workAmount>
-		<workSpeedStat>CookSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_CookMeal</soundWorking>
-		<allowMixingIngredients>true</allowMixingIngredients>
-		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-		<recipeUsers>
-			<li>VCE_SushiPrepTable</li>	
-		</recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>VCEF_RawFishCategory</li>
-					</categories>
-				</filter>
-				<count>1.4</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>RawRice</li>
-					</thingDefs>
-				</filter>
-				<count>0.6</count>
-			</li>
-		</ingredients>
-		<products>
-			<VCE_Norimaki>4</VCE_Norimaki>
-		</products>		
-	</RecipeDef>
-	
-	<!-- Fine -->	
-
+	<!-- Fine -->
 	<RecipeDef ParentName="VCE_CookFineSushiMealBase">
-		<defName>VCE_CookUramakiFine</defName>
-		<label>make uramaki (fine)</label>
-		<description>Make uramaki assembled with care from a wide selection of ingredients.</description>
-		<jobString>Making uramaki (fine).</jobString>
+		<defName>VCE_CookSushi_Fine</defName>
+		<label>make fine sushi</label>
+		<description>Make fine sushi assembled with care from a wide selection of ingredients.</description>
+		<jobString>Making fine sushi.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<recipeUsers>
-			<li>VCE_SushiPrepTable</li>	
+			<li>VCE_SushiPrepTable</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
 					<categories>
-						<li>VCEF_RawFishCategory</li>					
+						<li>VCEF_RawFishCategory</li>
 					</categories>
 				</filter>
 				<count>0.25</count>
 			</li>
 			<li>
 				<filter>
-					<categories>
-						<li>PlantFoodRaw</li>					
-					</categories>
+					<thingDefs>
+						<li>VCE_RawNoriSeaweed</li>
+					</thingDefs>
 				</filter>
 				<count>0.15</count>
 			</li>
@@ -262,44 +198,43 @@
 					</thingDefs>
 				</filter>
 				<count>0.1</count>
-			</li>		
+			</li>
 		</ingredients>
 		<products>
-			<VCE_Uramaki>1</VCE_Uramaki>
+			<VCE_Sushi_Fine>1</VCE_Sushi_Fine>
 		</products>
 		<skillRequirements>
 			<Cooking>6</Cooking>
 		</skillRequirements>
 	</RecipeDef>
-	
 	<RecipeDef ParentName="VCE_CookFineSushiMealBase">
-		<defName>VCE_CookUramakiFineBulk</defName>
-		<label>make uramaki (fine) x4</label>
-		<description>Make 4 uramaki assembled with care from a wide selection of ingredients.</description>
-		<jobString>Making uramaki (fine) x4.</jobString>
+		<defName>VCE_CookSushi_Fine_Bulk</defName>
+		<label>make fine sushi x4</label>
+		<description>Make 4 fine sushi assembled with care from a wide selection of ingredients.</description>
+		<jobString>Making fine sushi x4.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
-		 <workAmount>1800</workAmount>
+		<workAmount>1800</workAmount>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<recipeUsers>
-			<li>VCE_SushiPrepTable</li>	
+			<li>VCE_SushiPrepTable</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
 					<categories>
-						<li>VCEF_RawFishCategory</li>					
+						<li>VCEF_RawFishCategory</li>
 					</categories>
 				</filter>
 				<count>1</count>
 			</li>
 			<li>
 				<filter>
-					<categories>
-						<li>PlantFoodRaw</li>					
-					</categories>
+					<thingDefs>
+						<li>VCE_RawNoriSeaweed</li>
+					</thingDefs>
 				</filter>
 				<count>0.6</count>
 			</li>
@@ -310,142 +245,50 @@
 					</thingDefs>
 				</filter>
 				<count>0.4</count>
-			</li>		
+			</li>
 		</ingredients>
 		<products>
-			<VCE_Uramaki>4</VCE_Uramaki>
-		</products>
-		<skillRequirements>
-			<Cooking>6</Cooking>
-		</skillRequirements>
-	</RecipeDef>	
-	
-	<RecipeDef ParentName="VCE_CookFineSushiMealBase">
-		<defName>VCE_CookNigiriFine</defName>
-		<label>make nigiri (fine)</label>
-		<description>Make nigiri assembled with care from a wide selection of ingredients.</description>
-		<jobString>Making nigiri (fine).</jobString>
-		<workSpeedStat>CookSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_CookMeal</soundWorking>
-		<allowMixingIngredients>true</allowMixingIngredients>
-		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-		<recipeUsers>
-			<li>VCE_SushiPrepTable</li>	
-		</recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>VCEF_RawFishCategory</li>					
-					</categories>
-				</filter>
-				<count>0.15</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>PlantFoodRaw</li>					
-					</categories>
-				</filter>
-				<count>0.05</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>RawRice</li>
-					</thingDefs>
-				</filter>
-				<count>0.3</count>
-			</li>		
-		</ingredients>
-		<products>
-			<VCE_Nigiri>1</VCE_Nigiri>
+			<VCE_Sushi_Fine>4</VCE_Sushi_Fine>
 		</products>
 		<skillRequirements>
 			<Cooking>6</Cooking>
 		</skillRequirements>
 	</RecipeDef>
-	
-	<RecipeDef ParentName="VCE_CookFineSushiMealBase">
-		<defName>VCE_CookNigiriFineBulk</defName>
-		<label>make nigiri (fine) x4</label>
-		<description>Make 4 nigiri assembled with care from a wide selection of ingredients.</description>
-		<jobString>Making nigiri (fine) x4.</jobString>
+	<!-- Lavish -->
+	<RecipeDef ParentName="VCE_CookLavishSushiMealBase">
+		<defName>VCE_CookSushi_Lavish</defName>
+		<label>make lavish sushi</label>
+		<description>Make a masterpiece of the culinary arts, this lavish sushi nourishes the body, mind, and soul.</description>
+		<jobString>Making lavish sushi.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
-				 <workAmount>1800</workAmount>
-
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<recipeUsers>
-			<li>VCE_SushiPrepTable</li>	
+			<li>VCE_SushiPrepTable</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
 					<categories>
-						<li>VCEF_RawFishCategory</li>					
+						<li>VCEF_RawFishCategory</li>
 					</categories>
 				</filter>
-				<count>0.6</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>PlantFoodRaw</li>					
-					</categories>
-				</filter>
-				<count>0.2</count>
+				<count>0.25</count>
 			</li>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>RawRice</li>
+						<li>VCE_RawNoriSeaweed</li>
 					</thingDefs>
 				</filter>
-				<count>1.2</count>
-			</li>		
-		</ingredients>
-		<products>
-			<VCE_Nigiri>4</VCE_Nigiri>
-		</products>
-		<skillRequirements>
-			<Cooking>6</Cooking>
-		</skillRequirements>
-	</RecipeDef>
-	
-	
-	<!-- Lavish -->	
-
-	
-	<RecipeDef ParentName="VCE_CookFineSushiMealBase">
-		<defName>VCE_CookTemakiLavish</defName>
-		<label>make temaki (lavish)</label>
-		<description>Make a masterpiece of the culinary arts, this temaki nourishes the body, mind, and soul.</description>
-		<jobString>Making temaki (lavish).</jobString>
-		<workSpeedStat>CookSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_CookMeal</soundWorking>
-		<allowMixingIngredients>true</allowMixingIngredients>
-		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-		<recipeUsers>
-			<li>VCE_SushiPrepTable</li>	
-		</recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>VCEF_RawFishCategory</li>					
-					</categories>
-				</filter>
-				<count>0.5</count>
+				<count>0.25</count>
 			</li>
 			<li>
 				<filter>
 					<categories>
-						<li>PlantFoodRaw</li>					
+						<li>PlantFoodRaw</li>
 					</categories>
 				</filter>
 				<count>0.25</count>
@@ -457,21 +300,25 @@
 					</thingDefs>
 				</filter>
 				<count>0.25</count>
-			</li>		
+			</li>
 		</ingredients>
 		<products>
-			<VCE_Temaki>1</VCE_Temaki>
+			<VCE_Sushi_Lavish>1</VCE_Sushi_Lavish>
 		</products>
 		<skillRequirements>
 			<Cooking>8</Cooking>
 		</skillRequirements>
+		<modExtensions>
+			<li Class="VEF.Cooking.Recipe_Extension">
+				<individualIngredients>true</individualIngredients>
+			</li>
+		</modExtensions>
 	</RecipeDef>
-	
-	<RecipeDef ParentName="VCE_CookFineSushiMealBase">
-		<defName>VCE_CookTemakiLavishBulk</defName>
-		<label>make temaki (lavish) x4</label>
-		<description>Make 4 masterpieces of the culinary arts, these temaki nourish the body, mind, and soul.</description>
-		<jobString>Making temaki (lavish) x4.</jobString>
+	<RecipeDef ParentName="VCE_CookLavishSushiMealBase">
+		<defName>VCE_CookSushi_Lavish_Bulk</defName>
+		<label>make lavish sushi x4</label>
+		<description>Make 4 masterpieces of the culinary arts, these lavish sushi nourish the body, mind, and soul.</description>
+		<jobString>Making lavish sushi x4.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<workAmount>3200</workAmount>
@@ -479,21 +326,29 @@
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<recipeUsers>
-			<li>VCE_SushiPrepTable</li>	
+			<li>VCE_SushiPrepTable</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
 					<categories>
-						<li>VCEF_RawFishCategory</li>					
+						<li>VCEF_RawFishCategory</li>
 					</categories>
 				</filter>
-				<count>2</count>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_RawNoriSeaweed</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
 			</li>
 			<li>
 				<filter>
 					<categories>
-						<li>PlantFoodRaw</li>					
+						<li>PlantFoodRaw</li>
 					</categories>
 				</filter>
 				<count>1</count>
@@ -505,141 +360,55 @@
 					</thingDefs>
 				</filter>
 				<count>1</count>
-			</li>		
+			</li>
 		</ingredients>
 		<products>
-			<VCE_Temaki>4</VCE_Temaki>
+			<VCE_Sushi_Lavish>4</VCE_Sushi_Lavish>
 		</products>
 		<skillRequirements>
 			<Cooking>8</Cooking>
 		</skillRequirements>
-	</RecipeDef>	
-	
-	<RecipeDef ParentName="VCE_CookFineSushiMealBase">
-		<defName>VCE_CookFutomakiLavish</defName>
-		<label>make futomaki (lavish)</label>
-		<description>Make a masterpiece of the culinary arts, this futomaki nourishes the body, mind, and soul.</description>
-		<jobString>Making futomaki (lavish).</jobString>
-		<workSpeedStat>CookSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_CookMeal</soundWorking>
-		<allowMixingIngredients>true</allowMixingIngredients>
-		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-		<recipeUsers>
-			<li>VCE_SushiPrepTable</li>	
-		</recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>VCEF_RawFishCategory</li>					
-					</categories>
-				</filter>
-				<count>0.25</count>
+		<modExtensions>
+			<li Class="VEF.Cooking.Recipe_Extension">
+				<individualIngredients>true</individualIngredients>
 			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>PlantFoodRaw</li>					
-					</categories>
-				</filter>
-				<count>0.25</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>RawRice</li>
-					</thingDefs>
-				</filter>
-				<count>0.5</count>
-			</li>		
-		</ingredients>
-		<products>
-			<VCE_Futomaki>1</VCE_Futomaki>
-		</products>
-		<skillRequirements>
-			<Cooking>8</Cooking>
-		</skillRequirements>
+		</modExtensions>
 	</RecipeDef>
-	
-	<RecipeDef ParentName="VCE_CookFineSushiMealBase">
-		<defName>VCE_CookFutomakiLavishBulk</defName>
-		<label>make futomaki (lavish) x4</label>
-		<description>Make 4 masterpieces of the culinary arts, these futomaki nourish the body, mind, and soul.</description>
-		<jobString>Making futomaki (lavish) x4.</jobString>
-		<workSpeedStat>CookSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
-		<workAmount>3200</workAmount>
-		<soundWorking>Recipe_CookMeal</soundWorking>
-		<allowMixingIngredients>true</allowMixingIngredients>
-		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-		<recipeUsers>
-			<li>VCE_SushiPrepTable</li>	
-		</recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>VCEF_RawFishCategory</li>					
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>PlantFoodRaw</li>					
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>RawRice</li>
-					</thingDefs>
-				</filter>
-				<count>2</count>
-			</li>		
-		</ingredients>
-		<products>
-			<VCE_Futomaki>4</VCE_Futomaki>
-		</products>
-		<skillRequirements>
-			<Cooking>8</Cooking>
-		</skillRequirements>
-	</RecipeDef>
-	
-		<!-- Gourmet -->		
-	
-	
+	<!-- Gourmet -->
 	<RecipeDef ParentName="VCE_CookGourmetSushiMealBase">
-		<defName>VCE_CookGunkanmakiGourmet</defName>
-		<label>make gunkanmaki (gourmet)</label>
-		<description>Make a culinary work of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity gunkanmaki.</description>
-		<jobString>Making gunkanmaki (gourmet).</jobString>
+		<defName>VCE_CookSushi_Gourmet</defName>
+		<label>make gourmet sushi</label>
+		<description>Make a culinary work of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity gourmet sushi.</description>
+		<jobString>Making gourmet sushi.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<ingredientValueGetterClass>VEF.Cooking.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
 		<recipeUsers>
-			<li>VCE_SushiPrepTable</li>	
+			<li>VCE_SushiPrepTable</li>
 		</recipeUsers>
-
 		<ingredients>
 			<li>
 				<filter>
 					<categories>
-						<li>VCEF_RawFishCategory</li>					
+						<li>VCEF_RawFishCategory</li>
 					</categories>
 				</filter>
-				<count>0.5</count>
+				<count>0.25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_RawNoriSeaweed</li>
+					</thingDefs>
+				</filter>
+				<count>0.25</count>
 			</li>
 			<li>
 				<filter>
 					<categories>
-						<li>PlantFoodRaw</li>					
+						<li>PlantFoodRaw</li>
 					</categories>
 				</filter>
 				<count>0.25</count>
@@ -651,7 +420,7 @@
 					</thingDefs>
 				</filter>
 				<count>0.25</count>
-			</li>		
+			</li>
 			<li>
 				<filter>
 					<categories>
@@ -660,119 +429,58 @@
 				</filter>
 				<count>1</count>
 			</li>
-			
 		</ingredients>
 		<products>
-			<VCE_Gunkanmaki>1</VCE_Gunkanmaki>
+			<VCE_Sushi_Gourmet>1</VCE_Sushi_Gourmet>
 		</products>
 		<skillRequirements>
 			<Cooking>10</Cooking>
 		</skillRequirements>
+		<modExtensions>
+			<li Class="VEF.Cooking.Recipe_Extension">
+				<individualIngredients>true</individualIngredients>
+			</li>
+		</modExtensions>
 	</RecipeDef>
-	
-	<RecipeDef ParentName="VCE_CookGourmetSushiMealBase">
-		<defName>VCE_CookOshizushiiGourmet</defName>
-		<label>make oshizushi (gourmet)</label>
-		<description>Make a culinary work of art, characterized by refined, even elaborate preparation and presentation of an aesthetically balanced, albeit low quantity oshizushi.</description>
-		<jobString>Making oshizushi (gourmet).</jobString>
-		<workSpeedStat>CookSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_CookMeal</soundWorking>
-		<allowMixingIngredients>true</allowMixingIngredients>
-		<ingredientValueGetterClass>VEF.Cooking.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
-		<recipeUsers>
-			<li>VCE_SushiPrepTable</li>	
-		</recipeUsers>
-
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>VCEF_RawFishCategory</li>					
-					</categories>
-				</filter>
-				<count>0.25</count>
-			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>PlantFoodRaw</li>					
-					</categories>
-				</filter>
-				<count>0.25</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>RawRice</li>
-					</thingDefs>
-				</filter>
-				<count>0.5</count>
-			</li>		
-			<li>
-				<filter>
-					<categories>
-						<li>VCE_Condiments</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			
-		</ingredients>
-		<products>
-			<VCE_Oshizushi>1</VCE_Oshizushi>
-		</products>
-		<skillRequirements>
-			<Cooking>10</Cooking>
-		</skillRequirements>
-	</RecipeDef>
-	
+	<!-- Human surimi -->
 	<RecipeDef>
-    <defName>VCE_MakeHumanSurimi</defName>
-    <label>make human "surimi"</label>
-    <description>Turn human meat into a nondistinct paste mimicking the texture of lobster, crab, or other shellfish. The taste, though...</description>
-    <jobString>Making human "surimi".</jobString>
-    <workAmount>250</workAmount>
-    <workSpeedStat>CookSpeed</workSpeedStat>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_CookMeal</soundWorking>
-    <allowMixingIngredients>true</allowMixingIngredients>
-    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-	<recipeUsers>
-			<li>ButcherSpot</li>	
-			<li>TableButcher</li>	
-	</recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Meat_Human</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <products>
-      <VCE_HumanSurimi>20</VCE_HumanSurimi>
-    </products>
-    <fixedIngredientFilter>
-     
-      <thingDefs>
-        <li>Meat_Human</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <defaultIngredientFilter>
-      <thingDefs>
-        <li>Meat_Human</li>
-      </thingDefs>
-    </defaultIngredientFilter>
-    <workSkill>Cooking</workSkill>
-  </RecipeDef>
-
-
-
-
-
-
-
+		<defName>VCE_MakeHumanSurimi</defName>
+		<label>make human "surimi"</label>
+		<description>Turn human meat into a nondistinct paste mimicking the texture of lobster, crab, or other shellfish. The taste, though...</description>
+		<jobString>Making human "surimi".</jobString>
+		<workAmount>250</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ButcherSpot</li>
+			<li>TableButcher</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Human</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<VCE_HumanSurimi>20</VCE_HumanSurimi>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Meat_Human</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Meat_Human</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
 </Defs>

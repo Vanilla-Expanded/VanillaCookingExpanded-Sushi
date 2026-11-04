@@ -291,7 +291,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Plant Classes\Plant_NeedsWater.cs" />
-    <Compile Include="Plant Classes\Plant_WinterResistant.cs" />
+    <Compile Include="Plant Classes\Plant_NarrowTemperatures.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

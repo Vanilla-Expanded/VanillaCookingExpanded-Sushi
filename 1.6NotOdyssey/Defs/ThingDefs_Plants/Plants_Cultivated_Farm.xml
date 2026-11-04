@@ -1,12 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
-
-
 	<!--=========================== Food crops ==============================-->
-
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Soybean</defName>
 		<label>soybean plant</label>
@@ -22,7 +16,7 @@
 		</graphicData>
 		<selectable>true</selectable>
 		<pathCost>10</pathCost>
-		<ingestible />
+		<ingestible/>
 		<plant>
 			<dieIfLeafless>true</dieIfLeafless>
 			<maxMeshCount>1</maxMeshCount>
@@ -39,10 +33,8 @@
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<immatureGraphicPath>Things/Plant/Crops/VCE_Soybean_Immature</immatureGraphicPath>
-
 		</plant>
 	</ThingDef>
-
 	<ThingDef ParentName="PlantBase">
 		<defName>VCE_Wasabi</defName>
 		<label>wasabi plant</label>
@@ -58,7 +50,7 @@
 		</graphicData>
 		<selectable>true</selectable>
 		<pathCost>30</pathCost>
-		<ingestible />
+		<ingestible/>
 		<plant>
 			<fertilityMin>1</fertilityMin>
 			<fertilitySensitivity>1</fertilitySensitivity>
@@ -69,24 +61,52 @@
 			<harvestYield>1</harvestYield>
 			<harvestWork>200</harvestWork>
 			<sowTags>
-				<li>Ground</li>	
-				<li>Hydroponic</li>				
+				<li>Ground</li>
+				<li>Hydroponic</li>
 			</sowTags>
 			<sowMinSkill>12</sowMinSkill>
 			<topWindExposure>0.1</topWindExposure>
-			<growDays>12</growDays>			
+			<growDays>12</growDays>
 			<visualSizeRange>0.4~1.2</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<immatureGraphicPath>Things/Plant/Crops/VCE_Wasabi_Immature</immatureGraphicPath>
-			
 		</plant>
 	</ThingDef>
-
-	
-
-
-
-
-
+	<ThingDef ParentName="PlantBase">
+		<defName>VCE_NoriSeaweed</defName>
+		<label>nori seaweed</label>
+		<description>A dark green edible seaweed with a delicate umami flavour, commonly dried into thin, crisp sheets and used as a food ingredient.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Nori seaweed is only growable in aquatic growing zones, which ignore fertility.</description>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Crops/VCE_Seaweed</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>14</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VCE_RawNoriSeaweed</harvestedThingDef>
+			<harvestYield>9</harvestYield>
+			<maxMeshCount>4</maxMeshCount>
+			<fertilityMin>0</fertilityMin>
+			<sowWork>1000</sowWork>
+			<harvestWork>1000</harvestWork>
+			<sowTags>
+				<li>VCE_Aquatic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>6</growDays>
+			<visualSizeRange>0.5~1</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>true</humanFoodPlant>
+		</plant>
+	</ThingDef>
 </Defs>
