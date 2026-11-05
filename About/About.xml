@@ -3,12 +3,11 @@
 	<name>Vanilla Cooking Expanded - Sushi</name>
 	<author>Sarg Bjornson, Oskar Potocki</author>
 	<supportedVersions>
-	  <li>1.7</li>
-	  <li>1.5</li>
-	   <li>1.6</li>
-   </supportedVersions>
-  <modIconPath IgnoreIfNoMatchingField="True">UI/VELogo</modIconPath>
-	 <modDependencies>
+		<li>1.7</li>
+		<li>1.6</li>
+	</supportedVersions>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/VELogo</modIconPath>
+	<modDependencies>
 		<li>
 			<packageId>VanillaExpanded.VCookE</packageId>
 			<displayName>Vanilla Cooking Expanded</displayName>
@@ -21,9 +20,8 @@
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1914064942</steamWorkshopUrl>
 			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaFishingExpanded</downloadUrl>
 		</li>
-		
 	</modDependencies>
-		<packageId>VanillaExpanded.VCookESushi</packageId>
+	<packageId>VanillaExpanded.VCookESushi</packageId>
 	<loadAfter>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>VanillaExpanded.VCookE</li>
@@ -31,7 +29,7 @@
 	</loadAfter>
 	<description>Vanilla Cooking Expanded - Sushi is the second sub-module for Vanilla Cooking Expanded. This particular mod introduces sushi - a fish and rice based food that is immensely popular on the Rim.
 
-The module is an amazing way to make good use of our fishing mod, since all sushi meals need fish. It also includes two new plants, wasabi and soybeans, and two new condiments extracted from them: wasabi paste and soy sauce. Soy sauce needs to be fermented, and its quality will increase with time, in case you decide to use it as a "cash crop".
+The module is an amazing way to make good use of our fishing mod, since all sushi meals need fish. It also includes three new plants, wasabi, nori seaweed and soybeans, and two new condiments extracted from them: wasabi paste and soy sauce. Soy sauce needs to be fermented from soybeans.
 
 And of course you can always deep fry your sushi.</description>
 </ModMetaData>

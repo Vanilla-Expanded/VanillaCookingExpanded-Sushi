@@ -42,6 +42,12 @@
 			<tasteThought>VCE_AteFineSushi</tasteThought>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VCE_ConsumedNoriSeaweed</hediffDef>
+					<severity>1</severity>
+				</li>
+			</outcomeDoers>
 		</ingestible>
 	</ThingDef>
 	<!-- Lavish sushi -->
@@ -64,6 +70,12 @@
 			<tasteThought>VCE_AteLavishSushi</tasteThought>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VCE_ConsumedNoriSeaweed</hediffDef>
+					<severity>1</severity>
+				</li>
+			</outcomeDoers>
 		</ingestible>
 	</ThingDef>
 	<!-- Gourmet sushi-->
@@ -88,6 +100,12 @@
 			<tasteThought>VCE_AteGourmetSushi</tasteThought>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VCE_ConsumedNoriSeaweed</hediffDef>
+					<severity>1</severity>
+				</li>
+			</outcomeDoers>
 		</ingestible>
 	</ThingDef>
 </Defs>

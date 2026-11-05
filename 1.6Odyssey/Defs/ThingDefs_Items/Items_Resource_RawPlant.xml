@@ -47,7 +47,7 @@
 	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>VCE_RawNoriSeaweed</defName>
 		<label>nori seaweed</label>
-		<description>A dark green edible seaweed with a delicate umami flavour, commonly dried into thin, crisp sheets and used as a food ingredient.</description>
+		<description>A dark green edible seaweed with a delicate umami flavour, commonly dried into thin, crisp sheets and used as a food ingredient.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Nori seaweed is usually just a raw vegetable, but when used in sushi it will provide some condiment effects, specifically a minor regeneration of wounds.</description>
 		<soundInteract>Grain_Drop</soundInteract>
 		<soundDrop>Grain_Drop</soundDrop>
 		<graphicData>
