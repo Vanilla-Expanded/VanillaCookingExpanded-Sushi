@@ -39,7 +39,7 @@
 		<defName>VCE_Wasabi</defName>
 		<label>wasabi plant</label>
 		<thingClass>VanillaSushiExpanded.Plant_NeedsWater</thingClass>
-		<description>A plant of the horseradish family. A paste made from its ground rhizomes is used as a pungent condiment for sushi and other foods. It is similar in taste to hot mustard rather than chili peppers in that it stimulates the nose more than the tongue. Wasabi is widely considered to be one of the most difficult plants to grow, since it needs a temperate, extremely humid environment. It will receive a growth penalty if less than 20 tiles of water are found in a 6 tile radius.</description>
+		<description>A plant of the horseradish family. A paste made from its ground rhizomes is used as a pungent condiment for sushi and other foods. It is similar in taste to hot mustard rather than chili peppers in that it stimulates the nose more than the tongue. Wasabi is widely considered to be one of the most difficult plants to grow, since it needs a temperate, extremely humid environment. It will receive a growth penalty if less than 20 tiles of water are found in a 6 tile radius. If no water is found, the plant will not grow at all.</description>
 		<statBases>
 			<MaxHitPoints>10</MaxHitPoints>
 			<Nutrition>0.1</Nutrition>
@@ -67,7 +67,7 @@
 			<sowMinSkill>12</sowMinSkill>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>12</growDays>
-			<visualSizeRange>0.4~1.2</visualSizeRange>
+			<visualSizeRange>0.6~1.2</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<immatureGraphicPath>Things/Plant/Crops/VCE_Wasabi_Immature</immatureGraphicPath>

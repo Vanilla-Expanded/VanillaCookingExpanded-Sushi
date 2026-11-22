@@ -287,20 +287,21 @@
 			</li>
 			<li>
 				<filter>
-					<categories>
-						<li>PlantFoodRaw</li>
-					</categories>
-				</filter>
-				<count>0.25</count>
-			</li>
-			<li>
-				<filter>
 					<thingDefs>
 						<li>RawRice</li>
 					</thingDefs>
 				</filter>
 				<count>0.25</count>
 			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.25</count>
+			</li>
+			
 		</ingredients>
 		<products>
 			<VCE_Sushi_Lavish>1</VCE_Sushi_Lavish>
@@ -347,20 +348,21 @@
 			</li>
 			<li>
 				<filter>
-					<categories>
-						<li>PlantFoodRaw</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
 					<thingDefs>
 						<li>RawRice</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
 			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			
 		</ingredients>
 		<products>
 			<VCE_Sushi_Lavish>4</VCE_Sushi_Lavish>
@@ -407,20 +409,21 @@
 			</li>
 			<li>
 				<filter>
-					<categories>
-						<li>PlantFoodRaw</li>
-					</categories>
-				</filter>
-				<count>0.25</count>
-			</li>
-			<li>
-				<filter>
 					<thingDefs>
 						<li>RawRice</li>
 					</thingDefs>
 				</filter>
 				<count>0.25</count>
 			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>0.25</count>
+			</li>
+			
 			<li>
 				<filter>
 					<categories>
